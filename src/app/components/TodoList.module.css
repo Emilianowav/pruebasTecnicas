@@ -1,0 +1,163 @@
+.page {
+  position: relative;
+  width: 90vw;
+  height: auto;
+  display: flex;
+  align-items: safe;
+  justify-content: space-between;
+  font-family: 'Courier New', Courier, monospace;
+}
+.tooltipButton {
+  position: relative;
+  height: min-content;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  padding: 12px 12px;
+  border-radius: 50px;
+  font-size: 14px;
+  user-select: none;
+  transition: background-color .3s ease;
+}
+
+.tooltipButton:hover {
+  background-color: #2f88c4;
+}
+.tooltipButton::before {
+  content: "Haz aparecer la imagen con las tareas";
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.tooltipButton:has(.tooltipToggle:checked)::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card1{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;  
+  background-image: url(../../../public/Pattern1.jpg);
+  background-size: 100%;
+  padding: 32px 32px;
+}
+.card2{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../../public/Pattern3.jpg);
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+.card2 ul{
+  list-style: none;
+  font-size: 20px;
+  width: 100%;
+  
+}
+.card2 ul li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  border-bottom: solid 1px black;
+  color: white;
+  gap: 32px;
+  padding: 32px 32px;
+  width: 100%;
+}
+.title{
+  text-transform: uppercase;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.name{
+  width: 100%;
+}
+.name input{
+  width: 100%;
+  font-size: 20px;
+  padding: 4px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid black 1px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+}
+.name input:focus{
+  outline: none;
+  border: none;
+  border-bottom: solid black 2px;
+  backdrop-filter: blur(10px);
+}
+.descripcion{
+  width: 100%;
+}
+.descripcion textarea{
+  width: 100%;
+  height: 40vh;
+  font-size: 20px;
+  padding: 4px 0;
+  background-color: transparent;
+  padding: 16px;
+  border: solid black 1px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.descripcion textarea:focus{
+  outline: none;
+  backdrop-filter: blur(10px);
+  border: solid black 2px;
+}
+.button{
+    width: 100%;
+    padding: 16px 12px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: solid black 2px;
+    background-color: black;
+    transition: background-color .3s ease;
+  }
+.button.button:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+  
+
+.modulo{
+  
+  width: 100%;
+  text-align: center;
+  line-height: 24px;
+  padding: 16px 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: black;
+}

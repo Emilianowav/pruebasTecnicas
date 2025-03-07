@@ -1,0 +1,27 @@
+.container{
+    margin: 32px 32px 64px 32px;
+}
+.button {
+    margin: 32px 0;
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: wheat;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  
+  
+  .button:active {
+    background-color: wheat;
+    box-shadow: wheat 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+  }
+  

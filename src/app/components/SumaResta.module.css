@@ -1,0 +1,102 @@
+.page {
+    position: relative;
+    width: 90vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border: none;
+    gap: 24px;
+    font-family: var(--font-geist-sans);
+    background-image: url(../../../public/Pattern2.png);
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 48px 0px;
+    font-weight: bold;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px 32px 32px 128px;
+    border: solid rgb(0, 0, 0) 2px;
+    border-left: 0;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    background-color: rgba(0, 0, 0, 0.123);
+    box-shadow: 16px 0px 8px rgba(0, 0, 0, 0.6);
+  }
+  .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .counter {
+    min-width: 120px;
+    max-width: 120px;
+    font-size: 40px;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: gray;
+    border-radius: 100px;
+    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    user-select: none;
+  }
+  
+  .descripcion{
+    font-size: 20px;
+    padding: 12px 32px;
+    text-align: center;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    backdrop-filter: blur(32px);
+  }
+
+
+
+  /* ui button */
+
+  .boxButton {
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: gray;
+    padding-bottom: 10px;
+    transition: 0.1s ease-in-out;
+    user-select: none;
+    border-radius: 120px;
+  }
+  
+  .button {
+    font-size: 24px;
+    background-color: #dddddd;
+    border: 4px solid #fff;
+    padding: 3px 12px;
+    border-radius: 100px;
+  }
+  
+  .buttonSpan {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+  }
+  .buttonSpanReset{
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .boxButton:active {
+    padding: 0;
+    margin-bottom: 10px;
+    transform: translateY(10px);
+  }
+  
